@@ -28,6 +28,7 @@ const NavBar = () => {
       </div>
 
       {/* Mobile Nav Bar with Menu Open  */}
+      {/* Test */}
       {isOpen && (
         <div className="md:hidden bg-primary p-4 mt-2">
           <NavLink title="Projects" />
