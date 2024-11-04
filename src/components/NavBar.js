@@ -17,22 +17,22 @@ const NavBar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
-          <NavLink title="Projects" />
-          <NavLink title="About Me" />
+          <NavLink content="Projects" />
+          <NavLink content="About Me" />
         </div>
 
         {/* Mobile Closed Menu Button */}
         <button onClick={toggleMenu} className="md:hidden">
-          <span className="text-primary-text text-2xl">☰</span>
+          <span className="text-primary text-2xl">☰</span>
         </button>
       </div>
 
       {/* Mobile Nav Bar with Menu Open  */}
       {/* Test */}
       {isOpen && (
-        <div className="md:hidden bg-primary p-4 mt-2">
-          <NavLink title="Projects" />
-          <NavLink title="About Me" />
+        <div className="md:hidden p-4 mt-2">
+          <NavLink content="Projects" />
+          <NavLink content="About Me" />
         </div>
       )}
     </nav>
